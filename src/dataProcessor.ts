@@ -4,7 +4,7 @@ import { wait, mayFail } from "./utils";
 
 // Simulates fetching customer data
 export async function fetchCustomerData(): Promise<{ id: number; name: string }> {
-  console.log("⏳ Fetching customer data...");
+  console.log("Fetching customer data...");
   await wait(1000); // delay
 
   mayFail(); // randomly fail
@@ -19,7 +19,7 @@ export async function fetchCustomerData(): Promise<{ id: number; name: string }>
 export async function fetchOrderHistory(
   customer: { id: number; name: string }
 ): Promise<string[]> {
-  console.log(`⏳ Fetching order history for ${customer.name}...`);
+  console.log(`Fetching order history for ${customer.name}...`);
   await wait(1000);
 
   mayFail(); // randomly fail again
