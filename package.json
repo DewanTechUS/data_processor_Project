@@ -16,5 +16,13 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DewanTechUS/data_processor_Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DewanTechUS/data_processor_Project/issues"
+  },
+  "homepage": "https://github.com/DewanTechUS/data_processor_Project#readme"
 }
