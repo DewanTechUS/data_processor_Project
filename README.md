@@ -9,7 +9,21 @@ This project demonstrates:
 - Random error generation (like real APIs)
 - Separation of files using modules
 
-## How to Run
+# How to Run
+- npm install
+- npm install typescript --save-dev
+## Compile TypeScript to JavaScript
+- npx tsc
+- dist/
+- node dist/index.
+
+## Step              
+
+-         `npm install`        Install dependencies       
+-         `npx tsc`             Compile TypeScript         
+-         `node dist/index.js`  Run the project            
+-  `npm start`           Build + run in one command 
+
 
 
 ## Files
