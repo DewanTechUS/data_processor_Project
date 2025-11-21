@@ -3,14 +3,25 @@
 import { getCustomerData, getOrderHistory } from "./customerService";
 
 async function run() {
-  console.log("Fetching customer...");
-  const customer = await getCustomerData();
-  console.log("Customer:", customer);
+  console.log("Starting async demo...\n");
 
-  console.log("Fetching order history...");
-  const orders = await getOrderHistory();
-  console.log("Order History:", orders);
+  try {
+    const customer = await getCustomerData();
+    console.log("Customer loaded:", customer);
+  } catch (err) {
+    console.error("Could not load customer:", err);
+  }
+
+  console.log("\n----------------------------\n");
+
+  try {
+    const orders = await getOrderHistory();
+    console.log("Order History:", orders);
+  } catch (err) {
+    console.error("Could not load order history:", err);
+  }
+
+  console.log("\n Demo complete!\n");
 }
 
-// Start the async flow
 run();
